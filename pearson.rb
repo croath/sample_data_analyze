@@ -4,8 +4,8 @@ def ruby_pearson(x,y)
   sumx=x.inject(0) {|r,i| r + i}
   sumy=y.inject(0) {|r,i| r + i}
 
-  sumxSq=x.inject(0) {|r,i| r + i**2}
-  sumySq=y.inject(0) {|r,i| r + i**2}
+  sumxSq=x.inject(0) {|r,i| r + i**3}
+  sumySq=y.inject(0) {|r,i| r + i**3}
 
   prods=[]; x.each_with_index{|this_x,i| prods << this_x*y[i]}
   pSum=prods.inject(0){|r,i| r + i}
